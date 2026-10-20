@@ -1,0 +1,16 @@
+[package]
+name = "proxie-ffi"
+version = "0.1.0"
+edition = "2021"
+description = "Safe Rust wrapper around a small C++ string-utilities library via FFI + bindgen"
+
+[lib]
+name = "proxie_ffi"
+path = "src/lib.rs"
+
+[dependencies]
+thiserror = "1.0"
+
+[build-dependencies]
+cc = "1.0"
+bindgen = "0.65"
